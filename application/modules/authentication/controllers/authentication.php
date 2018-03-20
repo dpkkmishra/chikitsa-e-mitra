@@ -87,7 +87,7 @@ Class Authentication extends REST_Controller
                     $hof_details = $this->get_from_bhamashah($family_id, $mobile, $otp);
 
                     if(isset($hof_details->MOBILE_NO) && $hof_details->MOBILE_NO !='') {
-                        $hof_details->MOBILE_NO = '9009781991';
+                        // $hof_details->MOBILE_NO = '9009781991';
                         if($hof_details->MOBILE_NO == $mobile) {
                             $this->load->helper('aws');
                             $message_data['mobile'] = $mobile;
@@ -112,7 +112,7 @@ Class Authentication extends REST_Controller
         }
     }
 
-    public function get_from_bhamashah($family_id = 'YSGIMEC', $mobile="", $otp="") {
+    public function get_from_bhamashah($family_id = '', $mobile="", $otp="") {
         if($family_id == "") {
             return;
         }
@@ -130,7 +130,7 @@ Class Authentication extends REST_Controller
         $bhamashah_data = json_decode($bhamashah_data);
 
         if(isset($bhamashah_data->hof_Details)) {
-            $bhamashah_data->hof_Details->MOBILE_NO = '9009781991';
+            // $bhamashah_data->hof_Details->MOBILE_NO = '9009781991';
             if($bhamashah_data->hof_Details->MOBILE_NO == $mobile) {
                 $hof = $this->update_users($bhamashah_data->hof_Details, 1, $otp);
 
