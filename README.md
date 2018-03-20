@@ -1,9 +1,17 @@
-# CodeIgniter 2
-Open Source PHP Framework (originally from EllisLab)
+# चिकित्सा e-Mitra
+Clinic and Hospital visits are now paperless.
 
-For more info, please refer to the user-guide at http://www.codeigniter.com/userguide2/  
-(also available within the download package for offline use)
+Chikitsa e-Mitra is a Rajasthan's public welfare and patient history and prescription management system. It allows a patient or an individual to access their medical records. It is an automated system which can be totally accessible through the e-Mitra Kendra/Bhamashah Kendra from Villages, Gram Panchayat, Block, Tehsil and City, hence one can use Chikitsa e-Mitra using Bhamashah Family Id and Registered Mobile number any time.
 
-**WARNING:** *CodeIgniter 2.x is no longer under development and only receives security patches until October 31st, 2015.
-Please update your installation to the latest CodeIgniter 3.x version available
-(upgrade instructions [here](http://www.codeigniter.com/userguide3/installation/upgrade_300.html)).*
+There are 3 sections for using this, 
+one, from user-side providing Bhamashah Family Id
+two, from admin-panel
+three, from hospital or clinic, where a hospital can upload and view all previous records
+
+This project has only 2 sections, User and Admin Panel.
+
+For more info, please check this demo site 
+http://chikitsa.brahma.io
+http://admin.chikitsa.brahma.io
+
+Please refer the presentation and docs regarding the Chikitsa e-Mitra, available on git repository.
