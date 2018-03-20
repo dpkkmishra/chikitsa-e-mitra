@@ -1,0 +1,231 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #374767;  
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* Link style*/
+
+a {
+  color: #0D47A1;
+}
+
+a,
+a>* {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #000;
+  outline: none;
+  text-decoration: none;
+}
+
+/*--- table ---*/
+
+td,
+th {
+  padding: 14px 10px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+/* Transition elements*/
+
+a,
+.navbar a,
+.form-control {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ================ Typography ================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  /*color: #fff;*/
+  margin: 0 0 15px;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+p img { margin: 0; }
+p { margin: 0px; }
+hr { margin: 0; }
+
+.container-fluid {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav .brand-logo{
+	color: #636363;
+	line-height: 56px;
+}
+
+
+.container {    
+max-width: 80%;
+padding: 0;
+width: 100%;
+margin-top: 25px;
+}
+
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+/*--- sidebar top menu ---*/
+
+#wrapper {
+  padding-left: 280px;
+  transition: all 0.4s ease 0s;
+}
+nav .nav-wrapper{
+	margin: auto;	    
+    width: auto;
+    padding: 0px 20px;
+}
+
+
+.navbar-brand {
+  width: 280px;
+  padding: 0 10px;
+  height: 64px;
+  position: relative;
+}
+
+.navbar-brand>img {
+  width: auto;
+  height: 32px;
+  margin: 16px 10px;
+}
+
+.navbar-header {
+  background: #0c0c0c;
+  width: 223px;
+  height: 64px;
+}
+nav{
+	height: 56px;
+}
+
+nav i,
+nav [class^="mdi-"],
+nav [class*="mdi-"],
+nav i.material-icons {
+  font-size: 25px;
+  line-height: 65px;
+  margin-top: 0px;
+  color: #263238;
+  display: inline-block;
+  height: auto;
+}
+
+li.dropdown>a.dropdown-toggle>i.material-icons {
+  line-height: 62px;
+}
+
+nav ul a.user-pro:hover {
+  background-color: rgba(38, 166, 154, 0.26);
+}
+
+nav ul a.user-pro img {
+  margin-top: -6px;
+  height: 45px;
+  width: 45px;
+}
+
+nav ul a {
+  /*padding: 0 13px;*/
+  font-size: 18px;
+  font-weight: 800;
+  color: #636363;  
+    line-height: 56px;
+}
+
+nav ul a:hover{	
+	background: none;
+}
+
+.Search {
+    position: relative;
+    width: auto;
+    margin: auto;
+    top: 0px;
+    background: #fff;
+    clear: both;
+    padding: 5px 10px !important;
+    border: 1px solid #eee;
+    border-bottom: 0;
+}
+.Search-box {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 18px !important;
+    font-style: italic;
+    margin: 0px !important;
+}
+.Search-close {
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    cursor: pointer;
+    color: #202a2f;
+    height: 100%;
+    width: 3rem;
+    right: 5px;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+  border: 1px solid #e3e3e3;
+    padding: 0px 5px;
+    font-size: 16px;
+    width: -webkit-fill-available;
+}
+[type="radio"]:not(:checked)+label, [type="radio"]:checked+label{
+  font-size: 16px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+select.browser-default{
+  height: 32px;
+}
+.breadcrumb>li+li.back:before{
+    content: "";
+}
+.breadcrumb{
+    font-size: 16px;
+}
